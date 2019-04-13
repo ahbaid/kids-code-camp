@@ -2,7 +2,7 @@
 
 ## Welcome!
 Humans understand recipes. We read a recipe, we interpret it, then we execute it 
-to producce a meal. If a recipe is written in english, we need a human that understands
+to produce a meal. If a recipe is written in english, we need a human that understands
 english.
 
 Computers also understand recipes, we write these recipes in specific languages that
