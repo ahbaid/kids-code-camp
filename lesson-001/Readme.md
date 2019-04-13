@@ -3,11 +3,11 @@
 ---
 ## helloworld.py
 ### Code
-~~~~python
+~~~~python {.line-numbers}
 print ("Hello World!")
 ~~~~
 ### Run
-~~~~shell
+~~~~shell {.line-numbers}
 $ python3 helloworld.py
 Hello World!
 ~~~~
@@ -15,7 +15,7 @@ Hello World!
 ---
 ## hello.py
 ### Code
-~~~~python
+~~~~python {.line-numbers}
 name = input("What is your name? ")
 print ("Hello %s!" % name)
 offset = ''
@@ -24,7 +24,7 @@ for letter in name:
    print(offset+letter)
 ~~~~
 ### Run
-~~~~shell
+~~~~shell {.line-numbers}
 $ python3 hello.py 
 What is your name? Tazkiyyah
 Hello Tazkiyyah!
