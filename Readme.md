@@ -1,5 +1,7 @@
 # Kids Code Camp
 
+---
+
 ## Welcome!
 Humans understand recipes. We read a recipe, we interpret it, then we execute it 
 to produce a meal. If a recipe is written in english, we need a human that understands
@@ -23,8 +25,12 @@ For questions see our [FAQ](FAQ.md).
 
 Let's go code!
 
-## Lessons
+---
+
+## Lessons:
 * [lesson-001](/lesson-001)
+
+---
 
 ## A Recipe:
 
