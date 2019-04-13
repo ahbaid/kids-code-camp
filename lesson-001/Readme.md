@@ -3,9 +3,9 @@
 ---
 ## helloworld.py
 ### Code
-~~~~python {.line-numbers}
+```python {.line-numbers}
 print ("Hello World!")
-~~~~
+```
 ### Run
 ~~~~shell {.line-numbers}
 $ python3 helloworld.py
