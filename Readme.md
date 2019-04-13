@@ -17,6 +17,8 @@ execute to produce desired behavior or actions.
 Take a look at the sample starter program "hello.py" in lesson-001, run it using Python (version 3).
 See if you can understand what it does!
 
+If you are interested and would like to participate in our [slack channel](http://kids-code-camp.slack.com), read our [signup guide](Signup.md).
+
 Let's go code!
 
 ## A Recipe:
