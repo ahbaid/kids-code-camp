@@ -1,11 +1,13 @@
-# Lesson 1: Hello World
+# Lesson 1: Say Hello
 
-## Code
+## helloworld.py
+---
+### Code
 ~~~~python
 print ("Hello World!")
 ~~~~
 
-## Run It!
+### Run
 ~~~~shell
 $ python3 helloworld.py
 Hello World!
