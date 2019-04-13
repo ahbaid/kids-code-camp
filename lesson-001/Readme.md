@@ -38,3 +38,6 @@ Hello Tazkiyyah!
         a
          h
 ~~~~
+
+## Homework!
+* Please read the [homework](Homework.md).
