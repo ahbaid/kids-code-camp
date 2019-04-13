@@ -10,12 +10,12 @@ computers understand. These recipes are called programs. For a computer to inter
 program we need to run that program with an interpreter that understands the program
 language. 
 
-Programs written in Python are run using the Pythomn interpreter. We will be coding
+Programs written in Python are run using the Python interpreter. We will be coding
 in Python. Python is a language we write recipes (or programs) in that computers can interpret and
 execute to produce desired behavior or actions.
 
-Take a look at the sample starter program "hello.py" in lesson-001, run it using Python (version 3).
-See if you can understand what it does!
+Take a look at the sample starter program "[hello.py](/lesson-001/hello.py]" in [lesson-001](/lesson-001), run it using Python (version 3).
+Read it and see what it does by running it.
 
 If you are interested and would like to participate in our [slack channel](http://kids-code-camp.slack.com), read our [signup guide](Signup.md).
 
