@@ -13,7 +13,7 @@ language.
 Programs written in Python are run using the Pythomn interpreter. We will be coding
 Python. What is coding? That's what we are here to learn!
 
-Take a look at the sample starter program "hello.py" , run it using Python (version 3).
+Take a look at the sample starter program "hello.py" in lesson-001, run it using Python (version 3).
 See if you can understand what it does!
 
 Let's go code!
