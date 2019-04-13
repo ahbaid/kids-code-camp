@@ -23,6 +23,9 @@ For questions see our [FAQ](FAQ.md).
 
 Let's go code!
 
+## Lessons
+* [lesson-001](/lesson-001)
+
 ## A Recipe:
 
 Let's cook a meal. First we need to decide what we want to cook.
