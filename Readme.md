@@ -7,7 +7,7 @@ english.
 
 Computers also understand recipes, we write these recipes in specific languages that
 computers understand. These recipes are called programs. For a computer to interpret a 
-program we need to run that program with an interpreter that understands the programs
+program we need to run that program with an interpreter that understands the program
 language. 
 
 Programs written in Python are run using the Pythomn interpreter. We will be coding
