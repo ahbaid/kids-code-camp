@@ -19,6 +19,8 @@ See if you can understand what it does!
 
 If you are interested and would like to participate in our [slack channel](http://kids-code-camp.slack.com), read our [signup guide](Signup.md).
 
+For questions see our [FAQ](FAQ.md).
+
 Let's go code!
 
 ## A Recipe:
