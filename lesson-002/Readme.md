@@ -60,4 +60,28 @@ AttributeError: 'int' object has no attribute 'upper'
 ~~~~
 * The same code works, _x.upper()_ is allowed since the type of _x_ is a string and strings can be converted to uppercase.
 
+## Is _1_ the same as _"1"_?
+* Take a look at the [add.py](add.py) code example
+~~~~python
+x = input("enter x: ")
+y = input("enter y: ")
+z = int(x) + int(y)
+s = str(x) + str(y)
+print(x, "+", y, "is: ", z)
+print(x, "+", y, "is: ", s)
+~~~~
+* When we run this code, the effect we get depends on how we handle the type.
+* If we use the _str(x)_ instead of _int(x)_ type the effect of adding the variables has a diferent result.
+* Integer addition sums the values.
+* String addition appends the two values to produce a single result.
+~~~~python
+enter x: 1
+enter y: 2
+1 + 2 is:  3
+1 + 2 is:  12
+~~~~
+* Go ahead and have some fun playing around in IDLE with types.
 
+
+## Homework!
+* Please read the [homework](Homework.md).
