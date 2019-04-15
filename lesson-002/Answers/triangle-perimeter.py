@@ -1,0 +1,8 @@
+print ("\nTriangle Perimeter:")
+print ("========================")
+a = input("Enter side(a): ")
+b = input("Enter side(b): ")
+c = input("Enter side(c): ")
+p = int(a) + int(b) + int(c)
+print ("Perimiter is: ", p)
+print ()
