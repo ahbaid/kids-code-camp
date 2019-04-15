@@ -7,6 +7,7 @@
 ![Rectangle](rectangle.png)
 * Perimeter = a + b + a + b = 2a + 2b = 2(a+b)
 * Area = a x b
+* [rectangle.py](rectangle.py)
 ~~~~python
 print ("\nRectangle Calclulations:")
 print ("========================")
@@ -23,6 +24,7 @@ print ()
 ![Square](square.png)
 * Perimeter = a + a + a + a = 4a
 * Area = a x a = a<sup>2</sup>.
+* [square.py](square.py)
 ~~~~python
 print ("\nSquare Calclulations:")
 print ("========================")
@@ -38,6 +40,7 @@ print ()
 ![Triangles](triangles.png)
 * Perimeter = a + b + c
 * Area = 1/2 x base x height
+* [triangle-area.py](triangle-area.py)
 ~~~~python
 print ("\nTriangle Perimeter:")
 print ("========================")
@@ -48,6 +51,7 @@ p = int(a) + int(b) + int(c)
 print ("Perimiter is: ", p)
 print ()
 ~~~~
+* [triangle-perimeter.py](triangle-perimeter.py)
 ~~~~python
 print ("\nTriangle Perimeter:")
 print ("========================")
@@ -64,6 +68,7 @@ print ()
 * _r_ is the radius of the circle
 * Perimeter = 2 x π x r 
 * Area = π x r<sup>2</sup>
+* [circle.py](circle.py)
 ~~~~python
 print ("\nCircle Calclulations:")
 print ("========================")
@@ -82,6 +87,7 @@ print ()
 ## Temperature conversion
 * farenheit = (celsius * 9/5)+32
 * celsius = (farenheit - 32) * 5/9
+* [cel2far.py](cel2far.py)
 ~~~~python
 print ("\nCelsius to Farenheit:")
 print ("========================")
@@ -93,6 +99,7 @@ f = (t*9/5.0)+32
 print ("Temperature in Farenheit is:  ",f)
 print ()
 ~~~~
+* [far2cel.py](far2cel.py)
 ~~~~python
 print ("\nFarenheit to Celsius:")
 print ("========================")
