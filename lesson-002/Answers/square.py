@@ -1,0 +1,8 @@
+print ("\nSquare Calclulations:")
+print ("========================")
+w = input("Enter width(w) of one side: ")
+a = int(w) * int(w)
+p = int(w) + int(w) + int(w) + int(w)
+print ("Area is: ", a)
+print ("Perimiter is: ", p)
+print ()

@@ -1,0 +1,7 @@
+print ("\nTriangle Calclulations:")
+print ("========================")
+b = input("Enter base(b): ")
+h = input("Enter height(h): ")
+a = 0.5 * int(b) * int(h)
+print ("Area is: ", a)
+print ()
