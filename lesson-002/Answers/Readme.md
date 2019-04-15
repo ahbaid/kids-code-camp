@@ -42,13 +42,12 @@ print ()
 * Area = 1/2 x base x height
 * [triangle-area.py](triangle-area.py)
 ~~~~python
-print ("\nTriangle Perimeter:")
+print ("\nTriangle Calclulations:")
 print ("========================")
-a = input("Enter side(a): ")
-b = input("Enter side(b): ")
-c = input("Enter side(c): ")
-p = int(a) + int(b) + int(c)
-print ("Perimiter is: ", p)
+b = input("Enter base(b): ")
+h = input("Enter height(h): ")
+a = 0.5 * int(b) * int(h)
+print ("Area is: ", a)
 print ()
 ~~~~
 * [triangle-perimeter.py](triangle-perimeter.py)
