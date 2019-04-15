@@ -4,6 +4,7 @@
 * The area of an object is the space it occupies.
 
 ## Rectangles
-* Given the rectangle: ![](rectangle.png)
+* Given the rectangle: 
+![](rectangle.png)
 * Perimeter = a + b + a + b = 2a + 2b = 2(a+b)
 * Area = a x b
