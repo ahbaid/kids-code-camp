@@ -14,12 +14,12 @@
 * Area = a x a = a<sup>2</sup>.
 
 ## Triangles
-![Triangles](Triangles.png)
+![Triangles](triangles.png)
 * Perimeter = a + b + c
 * Area = 1/2 x base x height
 
 ## Circle
-![Circle](Circle.png)
+![Circle](circle.png)
 * _r_ is the radius of the circle
 * Perimeter = 2 x π x r 
 * Area = π x r<sup>2</sup>
