@@ -5,6 +5,6 @@
 
 ## Rectangles
 * Given the rectangle: 
-![](rectangle.png)
+* ![](rectangle.png)
 * Perimeter = a + b + a + b = 2a + 2b = 2(a+b)
 * Area = a x b
