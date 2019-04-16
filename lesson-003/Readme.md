@@ -1,7 +1,7 @@
 # Lesson 003 - Types
 
 ## int and str
-~~~~
+~~~~python
 >>> age=48
 >>> name='Ahbaid'
 >>> type(age)
@@ -11,7 +11,7 @@
 ~~~~
 
 ## float
-~~~~
+~~~~python
 >>> 3/2
 1.5
 >>> type(3/2)
@@ -29,7 +29,7 @@
 ~~~~
 
 ## dir()
-~~~~
+~~~~python
 >>> age
 48
 >>> name
@@ -50,7 +50,9 @@
 ~~~~
 
 ## help()
+~~~~python
 >>> help(str)
+~~~~
 
 ## Example string function
 ~~~~python
