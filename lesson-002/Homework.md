@@ -17,7 +17,7 @@ print ("Area of a rectangle is: ", area)
 ~~~~
 
 Here are some examples to do for our next class:
-1. Perimiter of a rectangle.
+1. Perimeter of a rectangle.
 2. Area of a square.
 3. Area of a triangle.
 4. Area of a circle.
