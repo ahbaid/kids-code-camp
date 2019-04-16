@@ -69,3 +69,6 @@
 >>> name.center(8,"*")
 '*Ahbaid*'
 ~~~~
+
+## Homework!
+* Please read the [homework](Homework.md).
