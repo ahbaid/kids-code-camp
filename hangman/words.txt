@@ -1,0 +1,10 @@
+apple
+banana
+cherry
+helicopter
+potato
+elephant
+sphinx
+throat
+yacht
+jelly
