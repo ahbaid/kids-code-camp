@@ -1,4 +1,4 @@
-# Lesson 003 - Types
+# Lesson 003 - Types (int and str)
 
 ## int and str
 ~~~~python
