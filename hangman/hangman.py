@@ -79,25 +79,29 @@ def gallows(errors):
 def main():
    # {{{ main code
 
+   # {{{ Check for arguments
    if (sys.argv.__len__() != 2):
       usage()
       sys.exit()
    else:
       # Assign first argument to filename
       filename = sys.argv[1]
+   # }}}
 
-   # Validate that the file is readable
+   # {{{ Validate word file is readable
    if not os.path.isfile(filename):
       print ("\nError file {} is not readable.\n".format(filename))
       sys.exit()
+   # }}}
 
-   # A list to hold the words we will be working with
+   # Declare an empty list to hold the words 
    words=[]
 
-   # Open the file and assign it to a handler
+   # {{{ read each line of the file, stripping off the end of line character into words list
+
+   # Open the word file and assign it to a handler
    wordfile = open(filename,'r')
  
-   # read each line of the file, stripping off the end of line character
    for line in wordfile:
       # Append each word in the file (each line) to the words list
       words.append(line.strip().lower())
@@ -105,25 +109,40 @@ def main():
    # close the file
    wordfile.close()
 
+   # }}}
+
    # Pick a random word from the list of words
    word = words[random.randrange(0,words.__len__())]
 
    # Initialize a string to represent the word being guessed
    guessed = '_' * word.__len__()
 
-   # Initialize counters for guesses, errors & letter
+   # Initialize counters for guesses, errors, guess & tries
    guesses=0
    errors=0
-   letter=''
-
+   guess=''
+   tries=0
    
-   while ((letter != '0') and (errors < 7)):
-      letter=input("\nGuess a letter [0 quits]: ")
-      letter.strip()
+   while ((guess != '0') and (errors < 6)):
       gallows(errors)
-      errors += 1
+      guess=input("\nGuess a letter [0 quits]: ")
+      guess.strip()
+      
+      if guess != '0':
+         errors += 1
+         tries += 1
 
-   print("\nThanks for playing....\n")
+   if errors == 6:
+      gallows(errors)
+
+   if guess == '0':
+      print("\nYour word was: %s\n" % word)
+      if tries == 1:
+         print("\nYou gave up after %d try....\n" % tries)
+      else:
+         print("\nYou gave up after %d tries....\n" % tries)
+   else:
+      print("\nThanks for playing....\n")
 
    # }}}
    
