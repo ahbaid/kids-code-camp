@@ -1,5 +1,6 @@
 import sys
 import os
+import random
 
 def usage():
    print ("\nUsage:")
@@ -7,7 +8,76 @@ def usage():
    print ("hangman.py <filename>")
    print ("- filename: path to file with words, one per line.\n")
 
+def gallows(errors):
+   # {{{ gallows code
+   print()
+   if errors == 0:
+      print(" +=====+=====+ ")
+      print(" +     |     + ")
+      print(" +           + ")
+      print(" +           + ")
+      print(" +           + ")
+      print(" +           + ")
+      print(" + 0 errors  + ")
+      print("=+===========+=")
+   elif errors == 1:
+      print(" +=====+=====+ ")
+      print(" +     |     + ")
+      print(" +     O     + ")
+      print(" +           + ")
+      print(" +           + ")
+      print(" +           + ")
+      print(" + 1 error!  + ")
+      print("=+===========+=")
+   elif errors == 2:
+      print(" +=====+=====+ ")
+      print(" +     |     + ")
+      print(" +     O     + ")
+      print(" +     |     + ")
+      print(" +           + ")
+      print(" +           + ")
+      print(" + 2 errors! + ")
+      print("=+===========+=")
+   elif errors == 3:
+      print(" +=====+=====+ ")
+      print(" +     |     + ")
+      print(" +     O     + ")
+      print(" +    /|     + ")
+      print(" +           + ")
+      print(" +           + ")
+      print(" + 3 errors! + ")
+      print("=+===========+=")
+   elif errors == 4:
+      print(" +=====+=====+ ")
+      print(" +     |     + ")
+      print(" +     O     + ")
+      print(" +    /|\    + ")
+      print(" +           + ")
+      print(" +           + ")
+      print(" + 4 errors! + ")
+      print("=+===========+=")
+   elif errors == 5:
+      print(" +=====+=====+ ")
+      print(" +     |     + ")
+      print(" +     O     + ")
+      print(" +    /|\    + ")
+      print(" +    /      + ")
+      print(" +           + ")
+      print(" + 5 errors! + ")
+      print("=+===========+=")
+   elif errors == 6:
+      print(" +=====+=====+ ")
+      print(" +     |     + ")
+      print(" +     O     + ")
+      print(" +    /|\    + ")
+      print(" +    / \    + ")
+      print(" + You Died! + ")
+      print(" + 6 errors! + ")
+      print("=+===========+=")
+   # }}}
+
 def main():
+   # {{{ main code
 
    if (sys.argv.__len__() != 2):
       usage()
@@ -35,9 +105,27 @@ def main():
    # close the file
    wordfile.close()
 
-   # print the words
-   for word in words:
-       print(word)
+   # Pick a random word from the list of words
+   word = words[random.randrange(0,words.__len__())]
 
+   # Initialize a string to represent the word being guessed
+   guessed = '_' * word.__len__()
+
+   # Initialize counters for guesses, errors & letter
+   guesses=0
+   errors=0
+   letter=''
+
+   
+   while ((letter != '0') and (errors < 7)):
+      letter=input("\nGuess a letter [0 quits]: ")
+      letter.strip()
+      gallows(errors)
+      errors += 1
+
+   print("\nThanks for playing....\n")
+
+   # }}}
+   
 if __name__ == '__main__':
    main()
