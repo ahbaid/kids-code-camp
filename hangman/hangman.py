@@ -1,8 +1,42 @@
-words=[]
+import sys
+import os
 
-f = open('words.txt','r')
-for line in f:
-   words.append(line.strip())
-f.close()
+def usage():
+   print ("\nUsage:")
+   print ("======")
+   print ("hangman.py <filename>")
+   print ("- filename: path to file with words, one per line.\n")
 
-print(words)
+
+def main():
+
+   if (sys.argv.__len__() != 2):
+      usage()
+      sys.exit()
+   else:
+      # Assign first argument to filename
+      filename = sys.argv[1]
+
+   # Validate that the file is readable
+   if not os.path.isfile(filename):
+      print ("\nError file {} is not readable.\n".format(filename))
+      sys.exit()
+
+   # A list to hold the words we will be working with
+   words=[]
+
+   # Open the file and assign it to a handler
+   wordfile = open(filename,'r')
+ 
+   # read each line of the file, stripping off the end of line character
+   for line in wordfile:
+      # Append each word in the file (each line) to the words list
+      words.append(line.strip())
+
+   # close the file
+   wordfile.close()
+
+   print(words)
+
+if __name__ == '__main__':
+   main()
