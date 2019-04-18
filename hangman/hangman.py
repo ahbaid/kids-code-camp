@@ -11,69 +11,48 @@ def usage():
 def gallows(errors):
    # {{{ gallows code
    print()
+   EL = [
+          " +=====+=====+ ",
+          " +     |     + ",
+          " +           + ",
+          " +           + ",
+          " +           + ",
+          " +           + ",
+          " +           + ",
+          "=+===========+="
+        ]
    if errors == 0:
-      print(" +=====+=====+ ")
-      print(" +     |     + ")
-      print(" +           + ")
-      print(" +           + ")
-      print(" +           + ")
-      print(" +           + ")
-      print(" + 0 errors  + ")
-      print("=+===========+=")
+      EL[6] = " + 0 errors  + "
    elif errors == 1:
-      print(" +=====+=====+ ")
-      print(" +     |     + ")
-      print(" +     O     + ")
-      print(" +           + ")
-      print(" +           + ")
-      print(" +           + ")
-      print(" + 1 error!  + ")
-      print("=+===========+=")
+      EL[2] = " +     O     + "
+      EL[6] = " + 1 error   + "
    elif errors == 2:
-      print(" +=====+=====+ ")
-      print(" +     |     + ")
-      print(" +     O     + ")
-      print(" +     |     + ")
-      print(" +           + ")
-      print(" +           + ")
-      print(" + 2 errors! + ")
-      print("=+===========+=")
+      EL[2] = " +     O     + "
+      EL[3] = " +     |     + "
+      EL[6] = " + 2 errors  + "
    elif errors == 3:
-      print(" +=====+=====+ ")
-      print(" +     |     + ")
-      print(" +     O     + ")
-      print(" +    /|     + ")
-      print(" +           + ")
-      print(" +           + ")
-      print(" + 3 errors! + ")
-      print("=+===========+=")
+      EL[2] = " +     O     + "
+      EL[3] = " +    /|     + "
+      EL[6] = " + 3 errors  + "
    elif errors == 4:
-      print(" +=====+=====+ ")
-      print(" +     |     + ")
-      print(" +     O     + ")
-      print(" +    /|\    + ")
-      print(" +           + ")
-      print(" +           + ")
-      print(" + 4 errors! + ")
-      print("=+===========+=")
+      EL[2] = " +     O     + "
+      EL[3] = " +    /|\    + "
+      EL[6] = " + 4 errors  + "
    elif errors == 5:
-      print(" +=====+=====+ ")
-      print(" +     |     + ")
-      print(" +     O     + ")
-      print(" +    /|\    + ")
-      print(" +    /      + ")
-      print(" +           + ")
-      print(" + 5 errors! + ")
-      print("=+===========+=")
+      EL[2] = " +     O     + "
+      EL[3] = " +    /|\    + "
+      EL[4] = " +    /      + "
+      EL[6] = " + 5 errors  + "
    elif errors == 6:
-      print(" +=====+=====+ ")
-      print(" +     |     + ")
-      print(" +     O     + ")
-      print(" +    /|\    + ")
-      print(" +    / \    + ")
-      print(" + You Died! + ")
-      print(" + 6 errors! + ")
-      print("=+===========+=")
+      EL[2] = " +     O     + "
+      EL[3] = " +    /|\    + "
+      EL[4] = " +    / \    + "
+      EL[5] = " + You Died! + "
+      EL[6] = " + 6 errors! + "
+
+   for e in EL:
+      print(e)
+
    # }}}
 
 def updateguess(guesslist,word,letter):
