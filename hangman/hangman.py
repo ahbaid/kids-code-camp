@@ -127,9 +127,7 @@ def main():
       guess=input("\nGuess a letter [0 quits]: ")
       guess.strip()
 
-      
       if guess != '0':
-
          if word.find(guess) != -1:
             guessed = updateguess(guessed,word,guess)
          else:
@@ -141,21 +139,25 @@ def main():
                print("\nYou guessed %s already\n" % guess)
 
          tries += 1
-         #print("\nYour current guess: %s\n" % guessed)
 
+   # Failed
    if errors == 6:
       gallows(errors)
 
+   # Quit early
    if guess == '0':
       print("\nYour word was: %s\n" % word)
       if tries == 1:
          print("You gave up after %d try....\n" % tries)
       else:
          print("You gave up after %d tries....\n" % tries)
+   # Guessed
    else:
+      # Won!
       if (guessed == word):
          print("\n!! %s !!\n" % word)
          print("You Won!\n")
+      # Did not win
       else:
          print("\nThanks for playing, your word was %s\n" % word)
 
