@@ -20,7 +20,7 @@ Don't worry too much about what packages are, we'll get into that later.
 For now, let's have some fun! Follow along.
 
 ## Turtle graphics
-* Pythin provides a package known as "turtle".
+* Python provides a package known as "turtle".
 * We will import this and play along.
 * Just type in the following code and see what happens.
 * Open up IDLE and begin.
