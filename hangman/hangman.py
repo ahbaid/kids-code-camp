@@ -76,8 +76,8 @@ def gallows(errors):
       print("=+===========+=")
    # }}}
 
-def checkguess(guesslist,word,letter):
-   # {{{ checkguess code
+def updateguess(guesslist,word,letter):
+   # {{{ updateguess code
 
    guesslist = list(guesslist)
 
@@ -133,20 +133,36 @@ def main():
    # Initialize a string to represent the word being guessed
    guessed = '_' * word.__len__()
 
+   # Initialize a string to capture all guesses
+   allguesses = ''
+
    # Initialize counters for guesses, errors, guess & tries
    guesses=0
    errors=0
    guess=''
    tries=0
    
-   while ((guess != '0') and (errors < 6)):
+   while ((guess != '0') and (errors < 6)) and (guessed != word):
       gallows(errors)
+      print("\nYour current guess: %s\n" % guessed)
       guess=input("\nGuess a letter [0 quits]: ")
       guess.strip()
+
       
       if guess != '0':
-         errors += 1
+
+         if word.find(guess) != -1:
+            guessed = updateguess(guessed,word,guess)
+         else:
+            if guessed.find(guess) == -1:
+               if allguesses.find(guess) == -1:
+                  errors += 1
+                  allguesses += guess
+            else:
+               print("\nYou guessed %s already\n" % guess)
+
          tries += 1
+         #print("\nYour current guess: %s\n" % guessed)
 
    if errors == 6:
       gallows(errors)
@@ -158,7 +174,11 @@ def main():
       else:
          print("You gave up after %d tries....\n" % tries)
    else:
-      print("\nThanks for playing....\n")
+      if (guessed == word):
+         print("\n!! %s !!\n" % word)
+         print("You Won!\n")
+      else:
+         print("\nThanks for playing, your word was %s\n" % word)
 
    # }}}
    
