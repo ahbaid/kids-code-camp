@@ -76,6 +76,22 @@ def gallows(errors):
       print("=+===========+=")
    # }}}
 
+def checkguess(guesslist,word,letter):
+   # {{{ checkguess code
+
+   guesslist = list(guesslist)
+
+   pos=0
+   while pos != -1:
+      pos = word.find(letter,pos)
+      if pos != -1:
+         guesslist[pos] = letter
+         pos += 1
+
+   return ''.join(guesslist)
+   
+   # }}}
+
 def main():
    # {{{ main code
 
@@ -138,9 +154,9 @@ def main():
    if guess == '0':
       print("\nYour word was: %s\n" % word)
       if tries == 1:
-         print("\nYou gave up after %d try....\n" % tries)
+         print("You gave up after %d try....\n" % tries)
       else:
-         print("\nYou gave up after %d tries....\n" % tries)
+         print("You gave up after %d tries....\n" % tries)
    else:
       print("\nThanks for playing....\n")
 
